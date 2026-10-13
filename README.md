@@ -9,4 +9,4 @@ Before any payment, complete administrator setup, reconcile and preserve all his
 Store credential and signing-key values only in the protected reviewer environment and an administrator-controlled secret manager.
 
 Infrastructure: https://github.com/KeeperCommunity/bitcoin-keeper/pull/7049
-Runbook: https://github.com/KeeperCommunity/bitcoin-keeper/blob/2ed9ad5b7bf90f1468f239b5dbb454f9b9e0ea1b/.github/CLAUDE_REVIEW.md
+Runbook: https://github.com/KeeperCommunity/bitcoin-keeper/blob/143526a0927ac2d72959218439968a79d210239d/.github/CLAUDE_REVIEW.md
