@@ -1,12 +1,16 @@
 # Keeper review payment ledger
 
-Private administrator-managed storage for Bitcoin Keeper's independent advisory review payment history.
+Administrator-managed, public metadata-only payment history for Bitcoin Keeper's independent advisory Claude reviewer. The public design uses branch rulesets available on GitHub Free; repository visibility may remain private until its administrator changes it.
 
-The reviewer remains disabled. This README initializes the repository only; the signed `keeper-claude-review-state` branch and `ledger.json` have not been created.
+The reviewer remains disabled. Only this README exists on main. The signed orphan `keeper-claude-review-state` branch and `ledger.json` have not been created.
 
-Before any payment, complete administrator setup, reconcile and preserve all historical charged/uncertain attempts, and enforce the two branch rulesets required by the reviewed infrastructure.
+The ledger schema contains PR numbers, immutable head/base SHAs, request/run IDs, status, counters and permanent $3 reservations. It contains no prompts, source code, model output, wallet data or credentials. Existing Claude findings are public comments on the application PR.
 
-Store credential and signing-key values only in the protected reviewer environment and an administrator-controlled secret manager.
+Before any payment, complete protected-environment/App setup, reconcile all historical charged/uncertain attempts, verify App-only writes and no-bypass deletion/force-push protections with the actual App token, and obtain independent production security evidence. Preserve every reservation; no fresh allowance or runtime reset is permitted.
 
-Infrastructure: https://github.com/KeeperCommunity/bitcoin-keeper/pull/7049
-Runbook: https://github.com/KeeperCommunity/bitcoin-keeper/blob/143526a0927ac2d72959218439968a79d210239d/.github/CLAUDE_REVIEW.md
+Store API, App-private-key and signing-secret values only in the protected reviewer environment and an administrator-controlled secret manager. Never commit them here, including in commit metadata.
+
+Infrastructure PR: https://github.com/KeeperCommunity/bitcoin-keeper/pull/7049
+Candidate runbook: https://github.com/KeeperCommunity/bitcoin-keeper/blob/89561308b51f155b5c85d4cb8c41e41a429e0350/.github/CLAUDE_REVIEW.md
+
+No activation, Copilot disable, merge or release is authorized.
